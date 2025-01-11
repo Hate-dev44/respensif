@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-hover img{
+    width: 100%;
+}
+
+.card{
+    margin: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr 100fr;
+}
+
+.btn-primary{
+    background-color: #FFD700 !important;
+    border: 0px solid #bbb !important;
+}
+
+h5{
+    font-size: 25px !important;
+    font-weight: bolder !important;
+
+}
+
+@media (max-width : 1024px){
+    h5{
+        color: red !important;
+    }
+    .container{
+        grid-template-columns : 100fr 100fr;
+        grid-template-rows: 100fr 100fr;
+    }
+}
+@media (max-width : 600px){
+    h5{
+        color: green !important;
+    }
+    .container{
+        grid-template-columns : 100fr;
+        grid-template-rows: 100fr 100fr 100fr 100fr;
+    }
+}
